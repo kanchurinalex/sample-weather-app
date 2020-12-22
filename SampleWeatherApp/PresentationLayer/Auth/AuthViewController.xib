@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController" customModule="SampleWeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="inputLabel" destination="qBO-XV-QzO" id="FqH-b2-gW7"/>
+                <outlet property="popupView" destination="llq-rF-w8u" id="Max-Id-boe"/>
+                <outlet property="view" destination="iN0-l3-epB" id="PtE-A9-lkg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBO-XV-QzO" customClass="AuthInputLabel" customModule="SampleWeatherApp" customModuleProvider="target">
+                    <rect key="frame" x="20" y="428" width="374" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="OMP-Pi-aw0"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llq-rF-w8u" customClass="PopupView" customModule="SampleWeatherApp" customModuleProvider="target">
+                    <rect key="frame" x="147" y="348" width="120" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="6nV-Oh-mmh"/>
+                        <constraint firstAttribute="width" constant="120" id="hZN-ud-5G4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qBO-XV-QzO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Boj-Ha-S80"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qBO-XV-QzO" secondAttribute="trailing" constant="20" id="ENh-rJ-acv"/>
+                <constraint firstItem="qBO-XV-QzO" firstAttribute="top" secondItem="llq-rF-w8u" secondAttribute="bottom" id="HBW-eF-wIQ"/>
+                <constraint firstItem="qBO-XV-QzO" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="JIw-ok-ueh"/>
+                <constraint firstItem="llq-rF-w8u" firstAttribute="centerX" secondItem="qBO-XV-QzO" secondAttribute="centerX" id="kbT-bb-Y7F"/>
+            </constraints>
+            <point key="canvasLocation" x="99" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
